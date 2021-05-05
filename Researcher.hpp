@@ -4,7 +4,7 @@
 
 namespace pandemic
 {
-    class Researcher : public player
+    class Researcher : public Player
     {
         private:
 

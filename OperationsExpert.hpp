@@ -4,7 +4,7 @@
 
 namespace pandemic
 {
-    class OperationsExpert : public player
+    class OperationsExpert : public Player
     {
         private:
 

@@ -4,7 +4,7 @@
 
 namespace pandemic
 {
-    class Dispatcher : public player
+    class Dispatcher : public Player
     {
         private:
 

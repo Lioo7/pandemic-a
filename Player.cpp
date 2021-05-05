@@ -1,36 +1,23 @@
-#pragma once
-#include "Board.hpp"
-#include "Color.hpp"
-#include "City.hpp"
-using namespace std;
+#include "Player.hpp"
+
 namespace pandemic
 {
-    class Player
-    {
-        private:
-        Board board;
-        City city;
-        // std::string role;
-
-        public:
-        Player(Board &board, City &city){}
         // This function drives the player from the current city to the nearby city 
-        Player& drive(City nearby_city);
+        Player& Player::drive(City nearby_city) {return *this;}
         // This funciton takes the player from the current city to the given city 
-        Player& fly_direct(City given_city);
+        Player& Player::fly_direct(City given_city){return *this;}
         // This funciton takes the player from the current city to any city in the board
-        Player& fly_charter(City any_city);
+        Player& Player::fly_charter(City any_city){return *this;}
         // This function takes the player to another city with a research station iff the current city has one
-        Player& fly_shuttle(City research_city);
+        Player& Player::fly_shuttle(City research_city){return *this;}
         // This function builds a research station in the current city 
-        Player& build();
+        Player& Player::build(){return *this;}
         // This function discovers a cure for the disease according to the given color
-        Player& discover_cure(Color disease_color);
+        Player& Player::discover_cure(Color disease_color){return *this;}
         // This function reduces the level of illness in the current city by one
-        Player& treat(City city);
+        Player& Player::treat(City city){return *this;}
         // This function returns the role of the player
-        static string role();
+        string Player::role(){return "null";}
         // This function adds the given card to this player 
-        Player& take_card(City city);
-    };
+        Player& Player::take_card(City city){return *this;}
 }

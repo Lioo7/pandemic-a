@@ -4,7 +4,7 @@
 
 namespace pandemic
 {
-    class Medic : public player
+    class Medic : public Player
     {
         private:
 

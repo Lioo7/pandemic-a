@@ -4,7 +4,7 @@
 
 namespace pandemic
 {
-    class FieldDoctor : public player
+    class FieldDoctor : public Player
     {
         private:
 

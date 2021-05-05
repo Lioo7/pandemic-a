@@ -4,7 +4,7 @@
 
 namespace pandemic
 {
-    class GeneSplicer : public player
+    class GeneSplicer : public Player
     {
         private:
 

@@ -4,11 +4,11 @@
 
 namespace pandemic
 {
-    class Scientist : public player
+    class Scientist : public Player
     {
         private:
 
         public: 
-        Scientist(Board board, City city) : Player(board, city){};
+        Scientist(Board board, City city, int amount) : Player(board, city){};
     };
 }
